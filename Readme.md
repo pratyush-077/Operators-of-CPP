@@ -1,15 +1,72 @@
-EXPERIMENT 3A,3B,3C
-NAME:Pratyush Saha
-PRN-24070123078
-In this experiment, we explored different types of operators used in C++ to perform various operations on data. Operators are essential building blocks that allow us to process and manipulate values effectively. We practiced using arithmetic, relational, logical, bitwise, assignment, and miscellaneous operators with simple programs.
+# Operators in C++
+# Pratyush Saha
+# PRN-24070123078
+In C++, operators are symbols that perform operations on variables and values (like +, -, *, etc.).
+They help in performing calculations, comparisons, and logical decisions.
 
-The goal was to understand how each operator works, where it’s used, and how operator precedence affects the result of expressions.
+Operators are grouped into categories based on their function:
 
-EXPERIMENT 3A
-CHECKING WHEATHER THE NUMBER IS POSITIVE OR NOT: This program checks whether a number entered by the user is positive, negative, or zero using simple conditional (if-else) statements. It compares the input number with zero and prints the appropriate result. This helps understand how condition checking works in C++ and is a basic example of decision-making in programming.
+1. Arithmetic Operators
+Used for mathematical operations.
 
-EXPERIMENT 3B
-In this program, the user inputs marks for three subjects. The program calculates the average and then determines the grade based on predefined ranges (e.g., 90+ = 'O', 80–89 = 'A+', etc.). This demonstrates how to use arithmetic and logical operators together with nested if-else statements to implement real-life decision logic in code.
+Operator	Function	Example
++	Addition	a + b (adds two values)
+-	Subtraction	a - b
+*	Multiplication	a * b
+/	Division	a / b (integer division if both are int)
+%	Modulus (Remainder)	a % b (remainder after division)
 
-EXPERIMENT 3C
-This program takes the x and y coordinates as input and uses conditional checks to find whether the point lies on the X-axis, Y-axis, origin, or in one of the four quadrants. It's a great example of combining multiple conditions to handle a variety of possible outcomes using if-else and logical operators.
+2. Relational (Comparison) Operators
+Used to compare values (results in true or false).
+
+Operator	Function	Example
+==	Equal to	a == b
+!=	Not equal to	a != b
+>	Greater than	a > b
+<	Less than	a < b
+>=	Greater than or equal to	a >= b
+<=	Less than or equal to	a <= b
+
+3. Logical Operators
+Used for decision-making (combining conditions).
+
+Operator	Function	Example
+&&	Logical AND (true if both true)	(a > 0 && b > 0)
+`		`
+!	Logical NOT (inverts condition)	!(a > 0)
+
+4. Assignment Operators
+Used to assign values to variables.
+
+Operator	Function	Example
+=	Assign value	x = 5
++=	Add and assign	x += 3 (same as x = x + 3)
+-=	Subtract and assign	x -= 2
+*=	Multiply and assign	x *= 4
+/=	Divide and assign	x /= 2
+%=	Modulus and assign	x %= 3
+
+5. Increment and Decrement Operators
+Used to increase or decrease a variable by 1.
+
+Operator	Function	Example
+++	Increment (pre/post)	++x or x++
+--	Decrement (pre/post)	--x or x--
+
+6. Conditional (Ternary) Operator
+Shorthand for if-else:
+
+cpp
+Copy
+Edit
+int a = 10, b = 5;
+int max = (a > b) ? a : b;  // If a > b, max = a, else max = b
+8. Miscellaneous Operators
+sizeof – Finds the size of a variable/type.
+Example: sizeof(int)
+
+& (Address of) – Returns memory address of a variable.
+
+* (Dereference) – Used with pointers to access value.
+
+:: (Scope Resolution) – Access global variables or class members.

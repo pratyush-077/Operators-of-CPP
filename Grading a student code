@@ -1,0 +1,38 @@
+# Grading a student code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int matMarks, phyMarks, chemMarks;
+    float average;
+
+    cout << "Enter the marks of Maths: ";
+    cin >> matMarks;
+
+    cout << "Enter the marks of Physics: ";
+    cin >> phyMarks;
+
+    cout << "Enter the marks of Chemistry: ";
+    cin >> chemMarks;
+
+    average = (matMarks + phyMarks + chemMarks) / 3.0;
+    cout << "The average marks are: " << average << endl;
+
+    if (average >= 90 && average <= 100) {
+        cout << "Grade: A" << endl;
+    } else if (average >= 80 && average < 90) {
+        cout << "Grade: B" << endl;
+    } else if (average >= 70 && average < 80) {
+        cout << "Grade: C" << endl;
+    } else if (average >= 60 && average < 70) {
+        cout << "Grade: D" << endl;
+    } else if (average >= 40 && average < 60) {
+        cout << "Grade: E (P)" << endl;
+    } else if (average >= 0 && average < 40) {
+        cout << "Grade: F (F)" << endl;
+    } else {
+        cout << "Invalid marks entered!" << endl;
+    }
+
+    return 0;
+}
